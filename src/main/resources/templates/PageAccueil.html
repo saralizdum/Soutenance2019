@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+
+<meta charset="UTF-8"/>
+<title>Biblio</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+
+<style>
+    body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        background-color: #bfbfbf;
+    }
+    .row {
+        background-color: whitesmoke;
+    }
+
+    #header{
+        background-color: #b94a48;
+        color: white;
+        text-align: center;
+    }
+
+    #footer{
+        background-color: #b94a48;
+        color: white;
+        text-align: center;
+        height: 65px;
+
+    }
+    img{
+        height: 350px;
+        width: 300px;
+    }
+    #footer img{
+        height: 20px;
+        width: 20px;
+    }
+
+    #nav{
+        display: flex;
+        justify-content:space-around;
+
+
+    }
+
+
+    .row .col-sm-8{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .form-group {
+        max-width: 100%;
+        margin: auto;}
+
+    .btn {
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+
+</style>
+<body>
+<div class="container">
+
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">PFE</a>
+        </div>
+        <ul id="nav" class="nav navbar-nav">
+            <li><a href="#">Acceuil</a></li>
+            <li><a href="/register">Register</a></li>
+            <li><a href="/login">Log in</a></li>
+
+        </ul>
+
+    </nav>
+    <form class="form-inline my-2 my-lg-0" th:action="@{/logout}" method="post">
+        <input class="form-control mr-sm-2" type="hidden" />
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Logout</button>
+</form>
+
+    <div class="row">
+        <div class="col-sm-8">
+
+        </div>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>

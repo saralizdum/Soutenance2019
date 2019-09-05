@@ -1,0 +1,1921 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#"
+     xml:base="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#conduit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#conduit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#conducteur"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#bus"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#camion"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#tracteur"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#fournitPar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#fournitPar">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#beton"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#ciment"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#fournisseur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#gère -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#gère">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#chef"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#projet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#remplit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#remplit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#employé"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#chèque"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#Coût -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#Coût">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DGR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DGR"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#Sécurité -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#Sécurité">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#confidentialité"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DGR"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#accord -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#accord">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#correspondance"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DGR"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#accueil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#accueil">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#domicile"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#achat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#achat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#administration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#administration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#affaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#affaire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#agencement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#agencement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#agriculture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#agriculture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#alimenter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#alimenter">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#réaliser"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#alliance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#alliance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DGR"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#amenagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#amenagement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#annonce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#annonce">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#communication"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DGR"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#annuel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#annuel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#appel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#appel">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#communication"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DGR"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#approv -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#approv">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#approvisionnement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#approvisionnement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#archive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#archive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#article -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#article">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#assistance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#assistance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#assistant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#assistant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#attestation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#attestation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#attribution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#attribution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#automédon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#automédon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#backoffice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#backoffice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#bancaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#bancaire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#batiment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#batiment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#beton -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#beton">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#fournitPar"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#fournisseur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#bon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#bon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#brique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#brique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#bureau -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#bureau">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#cadre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#cadre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#cahier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#cahier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#camion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#camion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#carte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#carte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#centre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#centre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#chantier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#chantier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#charge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#charge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#chauffeur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#chauffeur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#chef -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#chef">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#gère"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#projet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#chiffre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#chiffre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#chèque -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#chèque">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#ciment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#ciment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#fournitPar"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#fournisseur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#client -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#client">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#commande -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#commande">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#commerce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#commerce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#commerciale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#commerciale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#communication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#communication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DGR"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#complexe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#complexe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#compromis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#compromis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#compte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#compte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#condition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#condition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#conduct.trav.3degre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#conduct.trav.3degre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#conducteur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#conducteur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#conduit"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#bus"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#camion"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#tracteur"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#confidentialité -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#confidentialité">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DGR"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#congé -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#congé">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#construction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#construction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#contrat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#contrat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#coordinateur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#coordinateur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#coordination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#coordination">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DGR"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#correspondance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#correspondance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DGR"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#cour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#cour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#courrier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#courrier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#crm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#crm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#customer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#customer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#date -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#date">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#demande -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#demande">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#demandeur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#demandeur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#dicrétion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#dicrétion">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#secret"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DGR"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#diffusion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#diffusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#direct.appro.import -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#direct.appro.import">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#direct.cont.gestion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#direct.cont.gestion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#disponibilité -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#disponibilité">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DGR"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#distribution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#distribution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#diversification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#diversification">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#polyvalence"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#universalité"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DGR"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#division -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#division">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#domicile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#domicile">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#habitation"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#hébergement"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#résidence"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#droit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#droit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#délai -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#délai">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#economie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#economie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#emargement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#emargement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#emballage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#emballage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#emission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#emission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#employé -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#employé">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#remplit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#chèque"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#emprunt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#emprunt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#engineering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#engineering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#equipement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#equipement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#etat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#etat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#exceptionnel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#exceptionnel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#facture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#facture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#famille -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#famille">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#fenêtre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#fenêtre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#feuille -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#feuille">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#fiche -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#fiche">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#fidélisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#fidélisation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#fixe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#fixe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#fond -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#fond">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#formation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#formation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#formulaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#formulaire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#fournisseur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#fournisseur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#fourniture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#fourniture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#frais -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#frais">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#frontoffice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#frontoffice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#gest.du.personnel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#gest.du.personnel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#gestion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#gestion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#gisement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#gisement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#gravier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#gravier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#habitation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#habitation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#honneur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#honneur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#hydraulique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#hydraulique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#hébergement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#hébergement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#identité -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#identité">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#immatriculation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#immatriculation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#immobilier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#immobilier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#incorporel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#incorporel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#incorporelle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#incorporelle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#infrastructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#infrastructure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#ing.appli.inf.2degre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#ing.appli.inf.2degre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#ing.de -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#ing.de">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#installation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#installation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#institution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#institution">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#organisation"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DGR"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#interne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#interne">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#intérieure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#intérieure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#investissement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#investissement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#lettre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#lettre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#liberté -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#liberté">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DGR"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#livraison -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#livraison">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#location">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#reservation"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#locaux -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#locaux">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#logistique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#logistique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#magasin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#magasin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#magasinier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#magasinier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#maintenance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#maintenance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#mandat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#mandat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#manufacturier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#manufacturier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#marché -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#marché">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#materiel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#materiel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#menager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#menager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#mensuelle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#mensuelle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#messagerie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#messagerie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#mobilier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#mobilier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#mode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#mode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#mécanique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#mécanique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#nettoyage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#nettoyage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#nom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#nom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#notation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#notation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#offre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#offre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#opportunité -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#opportunité">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#organisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#organisation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DGR"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#outillage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#outillage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#ouvrage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#ouvrage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#pacte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#pacte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#paiement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#paiement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#particulière -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#particulière">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#pave -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#pave">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#personnel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#personnel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#pointage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#pointage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#polyvalence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#polyvalence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DGR"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#porte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#porte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#presse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#presse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#prime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#prime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#principal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#principal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#production -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#production">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#professionnel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#professionnel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#projet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#projet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#propriété -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#propriété">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#préliminaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#préliminaire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#prénom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#prénom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#publicité -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#publicité">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#quotidienne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#quotidienne">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#recherche -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#recherche">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#recrutement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#recrutement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#recuperable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#recuperable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#registre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#registre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#relatif -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#relatif">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#relation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#relation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#relationship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#relationship">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#rendement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#rendement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#renseignement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#renseignement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#requisition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#requisition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#reservation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#reservation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#resp.informatique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#resp.informatique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#responsable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#responsable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#revendeur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#revendeur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#revue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#revue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#réaliser -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#réaliser">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#réglement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#réglement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#résidence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#résidence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#sable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#sable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#salaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#salaire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#secret -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#secret">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DGR"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#secrétaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#secrétaire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#situation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#situation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#social -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#social">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#sterile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#sterile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#stock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#stock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#structure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#structure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#technique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#technique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#terrain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#terrain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#tracteur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#tracteur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#travail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#travail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#travaux -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#travaux">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#unité -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#unité">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#universalité -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#universalité">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DGR"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#valeur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#valeur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#variable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#variable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#vente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#vente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#échange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#échange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DAG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#élément -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#élément">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DRH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#étude -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#étude">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#DFC"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#alliance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#coordination"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#disponibilité"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#liberté"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amgsoft/ontologies/2019/5/untitled-ontology-14#organisation"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

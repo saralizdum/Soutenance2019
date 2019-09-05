@@ -1,0 +1,93 @@
+0: btph: -- Document Separator -- reut2-021.sgm
+btph
+spa
+1: etph: -- Document Separator -- reut2-013.sgm
+etph
+2: sodea: -- Document Separator -- reut2-013.sgm
+sodea
+3: sech: -- Document Separator -- reut2-013.sgm
+sech
+4: sppm: -- Document Separator -- reut2-013.sgm
+sppm
+5: hl: -- Document Separator -- reut2-013.sgm
+hl
+6: hta: -- Document Separator -- reut2-013.sgm
+hta
+7: gsh: -- Document Separator -- reut2-013.sgm
+gsh
+8: giryad: -- Document Separator -- reut2-013.sgm
+giryad
+9: spi: -- Document Separator -- reut2-013.sgm
+spi
+10: mdm: -- Document Separator -- reut2-013.sgm
+mdm
+11: htf: -- Document Separator -- reut2-013.sgm
+htf
+12: cliniqueh: -- Document Separator -- reut2-013.sgm
+cliniqueh
+13: granittam: -- Document Separator -- reut2-013.sgm
+granittam
+14: tamstone: -- Document Separator -- reut2-013.sgm
+tamstone
+15: teckna: -- Document Separator -- reut2-013.sgm
+teckna
+16: tarmim: -- Document Separator -- reut2-013.sgm
+tarmim
+17: puma: -- Document Separator -- reut2-013.sgm
+puma
+18: pba: -- Document Separator -- reut2-013.sgm
+pba
+19: strugal: -- Document Separator -- reut2-013.sgm
+strugal
+20: alumix: -- Document Separator -- reut2-013.sgm
+alumix
+21: hfcm: -- Document Separator -- reut2-013.sgm
+hfcm
+22: alpomac: -- Document Separator -- reut2-013.sgm
+alpomac
+23: alpostone: -- Document Separator -- reut2-013.sgm
+alpostone
+24: repisoh: -- Document Separator -- reut2-013.sgm
+repisoh
+25: sec sab: -- Document Separator -- reut2-013.sgm
+sec sab
+26: savalu: -- Document Separator -- reut2-013.sgm
+savalu
+27: gphp: -- Document Separator -- reut2-013.sgm
+gphp
+28: seh const: -- Document Separator -- reut2-013.sgm
+seh const
+29: hpp: -- Document Separator -- reut2-013.sgm
+hpp
+30: mm: -- Document Separator -- reut2-013.sgm
+mm
+31: azudal: -- Document Separator -- reut2-013.sgm
+azudal
+32: btph soft: -- Document Separator -- reut2-013.sgm
+btph soft
+33: hpm: -- Document Separator -- reut2-013.sgm
+hpm
+34: gsc: -- Document Separator -- reut2-013.sgm
+gsc
+35: s.sys: -- Document Separator -- reut2-013.sgm
+s.sys
+36: sba: -- Document Separator -- reut2-013.sgm
+sba
+37: gtpa: -- Document Separator -- reut2-013.sgm
+gtpa
+38: akha: -- Document Separator -- reut2-013.sgm
+akha
+39: sobider: -- Document Separator -- reut2-013.sgm
+sobider
+40: soprosta: -- Document Separator -- reut2-013.sgm
+soprosta
+41: s.froid: -- Document Separator -- reut2-013.sgm
+s.froid
+42: unit04h: -- Document Separator -- reut2-013.sgm
+unit04h
+43: m.pvc: -- Document Separator -- reut2-013.sgm
+m.pvc
+44: tulerie: -- Document Separator -- reut2-013.sgm
+tulerie
+44: autre: -- Document Separator -- reut2-013.sgm
+autre
